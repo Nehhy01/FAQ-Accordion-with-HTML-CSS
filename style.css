@@ -23,21 +23,25 @@ body {
 }
 
 main {
-  border: 1px solid black;
   height: 100vh;
-
-  /* background-image: url(./assets/images/background-pattern-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: 90%; */
-
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  position: relative;
+}
+
+.purple-background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 30%;
+  width: 100%;
+  background-image: url(./assets/images/background-pattern-mobile.svg);
+  background-size: contain;
 }
 
 .container {
-  width: 400px;
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
@@ -62,6 +66,7 @@ header img {
   flex-direction: column;
   /* gap: 1.5rem; */
 }
+
 .accordion-container:last-child {
   border: none;
 }
@@ -73,14 +78,14 @@ header img {
   border: none;
   text-align: left;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 2rem;
   cursor: pointer;
   color: hsl(292, 42%, 14%);
   transition: color 0.3s ease;
 }
 
 .accordion-question:hover {
-    color: hsl(293, 100%, 39%);
+  color: hsl(293, 100%, 39%);
 }
 
 .accordion-title {
@@ -97,5 +102,16 @@ header img {
 }
 
 .accordion-answer.open {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .purple-background {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-size: cover;
+  }
 }
