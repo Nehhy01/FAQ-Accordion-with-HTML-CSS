@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style.css" />
 
     <title>FAQ accordion Component</title>
+    
   </head>
   <body>
     <main>
@@ -32,12 +33,12 @@
 
         <div>
           <div class="accordion-container">
-            <div data-value="0" class="accordion-question">
+            <button data-value="0" class="accordion-question">
               <h2 class="accordion-title">
                 What is Frontend Mentor, and how will it help me?
               </h2>
               <img src="./assets/images/icon-plus.svg" alt="open-answer" />
-            </div>
+            </button>
             <div class="accordion-answer ">
               Frontend Mentor offers realistic coding challenges to help
               developers improve their frontend coding skills with projects in
@@ -46,11 +47,11 @@
             </div>
           </div>
 
-          <div class="accordion-container">
-            <div data-value="1" class="accordion-question">
+          <div class="accordion-container"  aria-expanded="false">
+            <button data-value="1" class="accordion-question">
               <h2 class="accordion-title">Is Frontend Mentor free?</h2>
               <img src="./assets/images/icon-plus.svg" alt="open-answer" />
-            </div>
+            </button>
             <div class="accordion-answer">
               Yes, Frontend Mentor offers both free and premium coding
               challenges, with the free option providing access to a range of
@@ -59,12 +60,12 @@
           </div>
 
           <div class="accordion-container">
-            <div data-value="2" class="accordion-question">
+            <button data-value="2" class="accordion-question">
               <h2 class="accordion-title">
                 Can I use Frontend Mentor projects in my portfolio?
               </h2>
               <img src="./assets/images/icon-plus.svg" alt="open-answer" />
-            </div>
+            </button>
             <div class="accordion-answer">
               Yes, you can use projects completed on Frontend Mentor in your
               portfolio. It's an excellent way to showcase your skills to
@@ -72,12 +73,12 @@
             </div>
           </div>
           <div class="accordion-container">
-            <div data-value="3" class="accordion-question">
+            <button data-value="3" class="accordion-question">
               <h2 class="accordion-title">
                 How can I get help if I'm stuck on a challenge?
               </h2>
               <img src="./assets/images/icon-plus.svg" alt="open-answer" />
-            </div>
+            </button>
             <div class="accordion-answer">
               The best place to get help is inside Frontend Mentor's Discord
               community. There's a help channel where you can ask questions and

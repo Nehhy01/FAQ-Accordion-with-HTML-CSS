@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 body {
@@ -33,7 +33,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .container {
@@ -60,18 +60,27 @@ header img {
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
 }
 .accordion-container:last-child {
-    border: none;
+  border: none;
 }
 
 .accordion-question {
   display: flex;
   align-items: center;
+  background: none;
+  border: none;
+  text-align: left;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 3rem;
   cursor: pointer;
+  color: hsl(292, 42%, 14%);
+  transition: color 0.3s ease;
+}
+
+.accordion-question:hover {
+    color: hsl(293, 100%, 39%);
 }
 
 .accordion-title {
@@ -82,9 +91,11 @@ header img {
 .accordion-answer {
   color: hsl(292, 16%, 49%);
   line-height: 1.4;
-  display: none; 
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
 
 .accordion-answer.open {
-    display: block;
+    margin-top: 1.5rem;
 }
