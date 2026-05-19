@@ -24,6 +24,7 @@ body {
 
 main {
   border: 1px solid black;
+  height: 100vh;
 
   /* background-image: url(./assets/images/background-pattern-mobile.svg);
   background-repeat: no-repeat;
