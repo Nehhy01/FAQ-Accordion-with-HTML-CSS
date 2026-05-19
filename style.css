@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+body {
+  font-family: "WorkSans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+}
+
+main {
+  border: 1px solid black;
+
+  /* background-image: url(./assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 90%; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.container {
+  width: 400px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px #0000000c;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+header img {
+  width: 30px;
+}
+
+.accordion-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.accordion-container:last-child {
+    border: none;
+}
+
+.accordion-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  cursor: pointer;
+}
+
+.accordion-title {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.accordion-answer {
+  color: hsl(292, 16%, 49%);
+  line-height: 1.4;
+  display: none; 
+}
+
+.accordion-answer.open {
+    display: block;
+}
